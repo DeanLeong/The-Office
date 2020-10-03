@@ -12,7 +12,7 @@ function CreateQuote(props) {
       person,
       text,
     };
-    const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/reviews`;
+    const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/quotes`;
     await axios.post(
       airtableURL,
       { fields },
