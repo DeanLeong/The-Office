@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./App.css";
 import Quote from "./Quote";
+import CreateQuote from "./CreateQuote";
 
 function App() {
   const [quote, setQuote] = useState([]);
@@ -23,7 +24,6 @@ function App() {
 
   return (
     <div className="App">
-      document.title = "The office Quotes"
       <h1>Welcome to The Office</h1>
       {quote.map((quote) => (
         <Quote
@@ -33,6 +33,7 @@ function App() {
           setFetchQuote={setFetchQuote}
         />
       ))}
+      <CreateQuote fetchQuote={fetchQuote} setFetchQuote={setFetchQuote} />
     </div>
   );
 }
