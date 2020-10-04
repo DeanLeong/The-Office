@@ -6,7 +6,7 @@ import CreateQuote from "./CreateQuote";
 
 function App() {
   const [quote, setQuote] = useState([]);
-  const [fetchQuote, setFetchQuote] = useState([]);
+  const [fetchQuote, setFetchQuote] = useState(false);
 
   useEffect(() => {
     const getQuote = async () => {
@@ -16,11 +16,11 @@ function App() {
           Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
         },
       });
-      console.log(response.data.records);
+      //console.log(response.data.records);
       setQuote(response.data.records);
     };
     getQuote();
-  }, []);
+  }, [fetchQuote]);
 
   return (
     <div className="App">

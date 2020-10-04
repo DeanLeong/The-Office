@@ -27,7 +27,7 @@ function UpdateQuote(props) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="update-form" onSubmit={handleSubmit}>
       <label htmlFor="person">Person:</label>
       <input
         name="person"

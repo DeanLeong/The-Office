@@ -21,3 +21,8 @@ form {
   margin: 0 auto;
   border: 1px solid black;
 }
+
+.update-form {
+  width: 280px;
+  max-width: 280px;
+}
