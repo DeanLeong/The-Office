@@ -1,3 +1,7 @@
+.App {
+  background-image: url(https://github.com/DeanLeong/The-Office/blob/main/officePictures/office.jpg?raw=true);
+}
+
 h1 {
   margin: 0 auto;
   text-align: center;
@@ -10,6 +14,7 @@ h1 {
   padding: 10px;
   text-align: center;
   border: 1px solid black;
+  background-color: peachpuff;
 }
 
 form {
@@ -20,6 +25,7 @@ form {
   padding: 10px;
   margin: 0 auto;
   border: 1px solid black;
+  background-color: peachpuff;
 }
 
 .update-form {

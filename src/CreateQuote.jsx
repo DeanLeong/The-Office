@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import axios from "axios";
 
 function CreateQuote(props) {
-  const [person, setPerson] = useState("Name of who said the quote");
-  const [text, setText] = useState("Text of quote");
+  const [person, setPerson] = useState(" ");
+  const [text, setText] = useState(" ");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
